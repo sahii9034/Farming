@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Container styling */
+    .container {
+      width: 1250px; /* Fixed width set to 1250 pixels */
+      padding: 20px;
+      background: linear-gradient(to bottom, lightblue, green); /* Light blue to green gradient */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    /* Products section styling */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 300px); /* 3 columns of 300px each */
+      gap: 20px; /* Space between the boxes */
+      margin-top: 20px;
+      justify-content: center; /* Center the grid items */
+    }
+
+    /* Product box styling */
+    .product-box {
+      width: 300px;
+      height: 300px;
+      background-color: #b2ebf2; /* Light blue background for boxes */
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; /* Align items to the top */
+      padding: 10px;
+    }
+
+    .product-box img {
+      width: 100%; /* Full width for the image */
+      height: 75%; /* 3/4 height for the image */
+      object-fit: cover; /* Maintain aspect ratio */
+      border-radius: 8px;
+    }
+
+    /* Back to Home styling */
+    .back-to-home {
+      text-decoration: none;
+      color: #333;
+      font-size: 1.1em;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #e0e0e0;
+      border-radius: 8px;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .back-to-home:hover {
+      background-color: #d0d0d0;
+    }
+
+    .back-to-home img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Gudlavalleru paddy varieties</h1>
+
+    <!-- Products Section -->
+    <div class="products">
+      <div class="product-box">
+        <img src="mr1.jpeg" alt="Product 1">
+        <h3>Swarna</h3>
+        <h3>Seed number:(NLR-33057)
+(IET-11582)</h3>
+        <h3>Price: 1720</h3>
+      </div>
+      <div class="product-box">
+        <img src="mr3.jpeg" alt="Product 2">
+        <h3>Somasila</h3>
+        <h3>Seed number:(NLR-33358)
+(IET-13932)</h3>
+        <h3>Price:1720 </h3>
+      </div>
+      <div class="product-box">
+        <img src="mr4.jpeg" alt="Product 3">
+        <h3>Bharani</h3>
+        <h3>Seed number:(NLR-30491)
+(IET-12630)</h3>
+        <h3>Price: 1700</h3>
+      </div>
+      <div class="product-box">
+        <img src="mr2.jpeg" alt="Product 4">
+        <h3>Surya</h3>
+        <h3>Seed number:(BPT-4358)</h3>
+        <h3>Price: 1700</h3>
+      </div>
+      <div class="product-box">
+        <img src="mr5.jpeg" alt="Product 5">
+        <h3>Swathi</h3>
+        <h3>Seed number:(NLR-33057)
+(IET-11582)</h3>
+        <h3>Price: 1730</h3>
+      </div>
+      <div class="product-box">
+        <img src="mr6.jpeg" alt="Product 6">
+        <h3>Maruteru Sannalu</h3>
+        <h3>Seed number:(MTU-1006)
+(IET-14348)</h3>
+        <h3>Price:1720</h3>
+      </div>
+    </div>
+
+    <!-- Back to Home link -->
+    <a href="sellings.html" class="back-to-home">
+       Back to Home
+    </a>
+  </div>
+</body>
+</html>

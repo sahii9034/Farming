@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Layout with Links</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Container styling */
+    .container {
+      width: 1250px; /* Fixed width set to 1250 pixels */
+      padding: 20px;
+      background: linear-gradient(to bottom, lightblue,green); /* Light blue to white gradient */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    /* Links section styling */
+    .link-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #e0e0e0;
+      border-radius: 8px;
+    }
+
+    /* Link styling */
+    .link-section {
+      flex: 1;
+      text-decoration: none;
+      color: #333;
+      font-size: 1.2em;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .link-section:hover {
+      background-color: #d0d0d0;
+    }
+
+    .link-section img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 8px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    /* Back to Home styling */
+    .back-to-home {
+      flex: 1; /* Allow it to take the same space as other links */
+      text-decoration: none;
+      color: #333;
+      font-size: 1.2em; /* Match the font size */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .back-to-home:hover {
+      background-color: #d0d0d0;
+    }
+
+    .back-to-home img {
+      width: 100px; /* Match the image size */
+      height: 100px;
+      vertical-align: middle;
+      margin-bottom: 8px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Links Section -->
+    <div class="link-container">
+      <a href="products.html" class="link-section" target=_blank>
+        <img src="three.jpeg" alt="Products">
+        Selling
+      </a>
+      <a href="marketprices.html" class="link-section" target=_blank>
+        <img src="two1.jpeg" alt="Market Prices">
+        Market Prices
+      </a>
+      <a href="buyers.html" class="back-to-home" target=_blank>
+        <img src="four.jpeg" alt="Buying"> 
+        Buying
+      </a>
+    </div>
+  </div>
+</body>
+</html>

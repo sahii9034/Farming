@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback and Reviews - Paddy Marketplace</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+    }
+    header {
+      background: linear-gradient(135deg, #4CAF50, #34a853);
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-bottom-left-radius: 50% 10px;
+      border-bottom-right-radius: 50% 10px;
+    }
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      padding: 0 20px 40px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #333;
+      margin-top: 40px;
+    }
+    form {
+      margin: 30px 20px;
+      background: #f7f7f7;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #444;
+    }
+    input, textarea, select {
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+    button {
+      padding: 15px;
+      background: #34a853;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #28a745;
+    }
+
+    /* Creative Review Cards */
+    .reviews-section {
+      margin-top: 50px;
+    }
+    .review-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+    .review-card {
+      background: #fafafa;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+    .review-card:nth-child(odd) {
+      background: #f0f4f7;
+      transform: rotate(-2deg);
+    }
+    .review-card:nth-child(even) {
+      transform: rotate(2deg);
+    }
+    .review-card h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #34a853;
+    }
+    .review-card p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #555;
+    }
+    .review-card .rating {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #34a853;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      margin: 40px 0 10px;
+      color: #888;
+    }
+
+  </style>
+  
+</head>
+<body>
+
+  <header>
+    <h2>Feedback and Reviews - Paddy Marketplace</h2>
+  </header>
+
+  <main>
+    <!-- Feedback Form -->
+    <section>
+      <h1>We Appreciate Your Feedback</h1>
+      <p style="text-align:center; color:#777; margin-bottom:30px;">Let us know how we're doing! Share your thoughts and help us improve the Paddy Marketplace experience.</p>
+
+      <form id="Feedbackform" action="feed.php" method="POST" >
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="rating">Rating</label>
+          <select id="rating" name="rating" required>
+            <option value="">Select a Rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Average</option>
+            <option value="2">2 - Poor</option>
+            <option value="1">1 - Terrible</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Feedback</label>
+          <textarea id="message" name="message" placeholder="Write your feedback here" required></textarea>
+        </div>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </section>
+
+    <!-- Reviews Section -->
+     <footer>
+    <p>&copy; 2024 Paddy Marketplace | Gudlavalleru</p>
+  </footer>
+
+</body>
+</html>

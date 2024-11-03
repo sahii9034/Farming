@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Container styling */
+    .container {
+      width: 1250px; /* Fixed width set to 1250 pixels */
+      padding: 20px;
+      background: linear-gradient(to bottom, #e0f7fa, #fff); /* Light blue to white gradient */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    /* Products section styling */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 300px); /* 3 columns of 300px each */
+      gap: 20px; /* Space between the boxes */
+      margin-top: 20px;
+    }
+
+    .product-box {
+      width: 300px;
+      height: 300px;
+      background-color: #b2ebf2; /* Light blue background for boxes */
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+      color: #333;
+    }
+
+    /* Back to Home styling */
+    .back-to-home {
+      text-decoration: none;
+      color: #333;
+      font-size: 1.1em;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #e0e0e0;
+      border-radius: 8px;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .back-to-home:hover {
+      background-color: #d0d0d0;
+    }
+
+    .back-to-home img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Products</h1>
+
+    <!-- Products Section -->
+    <div class="products">
+      <div class="product-box">Product 1</div>
+      <div class="product-box">Product 2</div>
+      <div class="product-box">Product 3</div>
+      <div class="product-box">Product 4</div>
+      <div class="product-box">Product 5</div>
+      <div class="product-box">Product 6</div>
+    </div>
+
+    <!-- Back to Home link -->
+    <a href="mainframes.html" class="back-to-home">
+      <img src="back_arrow_icon.png" alt="Back to Home"> Back to Home
+    </a>
+  </div>
+</body>
+</html>

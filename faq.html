@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs - Paddy Marketplace</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .faq-section {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+    .faq-question {
+      font-weight: bold;
+      margin: 0;
+      cursor: pointer;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .faq-answer {
+      display: none;
+      padding: 10px 0;
+      font-size: 0.9em;
+      color: #666;
+    }
+    .faq-answer.active {
+      display: block;
+    }
+    footer {
+      text-align: center;
+      margin: 20px 0;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>FAQs - Paddy Marketplace</h2>
+  </header>
+
+  <main>
+    <section class="faq-section">
+      <h1>Frequently Asked Questions</h1>
+
+      <!-- FAQ 1 -->
+      <div class="faq">
+        <p class="faq-question">1. How do I register as a farmer or buyer?</p>
+        <p class="faq-answer">To register as a farmer or buyer, simply click on the "Register" link on the homepage. You will be guided through a simple registration process where you will enter your personal details and business information.</p>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="faq">
+        <p class="faq-question">2. How can I list my paddy for sale?</p>
+        <p class="faq-answer">Once registered as a farmer, log in to your account, navigate to "Sell Your Paddy", and fill in the details of your listing including quantity, variety, and price. You can upload pictures and descriptions to attract buyers.</p>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="faq">
+        <p class="faq-question">3. How do I browse and purchase paddy as a buyer?</p>
+        <p class="faq-answer">As a buyer, you can browse paddy listings by clicking on the "Browse Paddy Listings" link in the Buyers section. Once you find a listing you’re interested in, follow the prompts to purchase the paddy.</p>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="faq">
+        <p class="faq-question">4. What payment methods are accepted?</p>
+        <p class="faq-answer">We accept various payment methods, including bank transfers, credit cards, and popular mobile payment platforms. You can choose the method that is most convenient for you at checkout.</p>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="faq">
+        <p class="faq-question">5. What if there’s an issue with the transaction or quality of paddy?</p>
+        <p class="faq-answer">In case of any issues with a transaction, you can contact our support team via the "Contact Us" page. We will investigate the issue and help mediate a solution between the buyer and seller.</p>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div class="faq">
+        <p class="faq-question">6. How can I contact customer support?</p>
+        <p class="faq-answer">You can contact our customer support team through the "Contact Us" page, where you will find a form to submit your query. Alternatively, you can reach us via the phone number or email provided there.</p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Paddy Marketplace|Gudlavalleru</p>
+  </footer>
+
+  <script>
+    // FAQ Toggle Functionality
+    const faqs = document.querySelectorAll('.faq-question');
+
+    faqs.forEach(faq => {
+      faq.addEventListener('click', () => {
+        faq.nextElementSibling.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

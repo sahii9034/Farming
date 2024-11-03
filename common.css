@@ -1,0 +1,86 @@
+/* ---------- Base Styles (Shared Across Pages) ---------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    color: #777;
+    padding: 10px;
+}
+
+/* ---------- Contact Us Page Specific Styles ---------- */
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* ---------- Feedback and Reviews Page Specific Styles ---------- */
+.reviews-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: 45%;
+}
+
+/* ---------- FAQs Page Specific Styles ---------- */
+.faq-section {
+    margin-top: 20px;
+}
+
+.faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.faq-answer {
+    display: none;
+    margin-bottom: 10px;
+}
+
+.faq-answer.active {
+    display: block;
+}
